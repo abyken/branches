@@ -1,7 +1,7 @@
 from rest_framework import viewsets, response, filters, status
 from rest_framework.decorators import list_route, detail_route
-from branchesInfo.models import *
-from branchesInfo.serializers import *
+from .models import *
+from .serializers import *
 
 class BranchViewSet(viewsets.ModelViewSet):
 	queryset = Branch.objects.all()

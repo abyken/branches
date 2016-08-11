@@ -1,5 +1,6 @@
 from rest_framework.routers import DefaultRouter
 from branchesInfo.api_views import *
+from django.conf.urls import url, include
 
 router = DefaultRouter()
 router.register(r'branches', BranchViewSet, 'branches')
